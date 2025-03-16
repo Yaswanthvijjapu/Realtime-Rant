@@ -11,6 +11,7 @@
           "min-height: auto"
         ]
       }
-    ]
+    ],
+    "highest-available-document-mode": "off"
   }
 }
