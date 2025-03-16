@@ -19,7 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     background: var(--light-color);
-    margin: 20px;
+    margin: 10px; /* Reduced margin for mobile */
     line-height: 1.6;
 }
 
@@ -34,12 +34,12 @@ a {
 
 .btn {
     cursor: pointer;
-    padding: 8px 20px;
+    padding: 6px 15px; /* Slightly smaller padding for mobile */
     background: var(--dark-color-a);
     color: #fff;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size for mobile */
     transition: background 0.3s ease;
 }
 
@@ -51,7 +51,7 @@ a {
 .chat-container {
     max-width: 1200px;
     background: #fff;
-    margin: 40px auto;
+    margin: 20px auto; /* Reduced margin for mobile */
     border-radius: 8px;
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -62,55 +62,59 @@ a {
     color: #fff;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.chat-header h1 {
+    font-size: 18px; /* Smaller header for mobile */
+}
+
 .chat-main {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    min-height: 500px;
+    min-height: 400px; /* Reduced height for mobile */
 }
 
 .chat-sidebar {
     background: var(--dark-color-b);
     color: #fff;
-    padding: 25px;
+    padding: 15px; /* Reduced padding */
     overflow-y: auto;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .chat-sidebar h2 {
-    font-size: 22px;
+    font-size: 18px; /* Smaller font */
     background: rgba(0, 0, 0, 0.15);
-    padding: 12px;
-    margin-bottom: 25px;
+    padding: 8px;
+    margin-bottom: 15px;
     border-radius: 4px;
 }
 
 .chat-sidebar h3 {
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .chat-sidebar ul li {
-    padding: 12px 0;
+    padding: 8px 0; /* Reduced padding */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .chat-messages {
-    padding: 30px;
-    max-height: 500px;
+    padding: 20px; /* Reduced padding */
+    max-height: 400px; /* Adjusted for mobile */
     overflow-y: auto;
     background: #fafafa;
 }
 
 .chat-messages .message {
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px; /* Reduced padding */
+    margin-bottom: 15px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: var(--shadow);
@@ -122,11 +126,11 @@ a {
 }
 
 .chat-messages .message .meta {
-    font-size: 15px;
+    font-size: 14px; /* Smaller font */
     font-weight: 600;
     color: var(--dark-color-a);
     opacity: 0.9;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .chat-messages .message .meta span {
@@ -135,20 +139,20 @@ a {
 }
 
 .chat-form-container {
-    padding: 20px 30px;
+    padding: 15px 20px; /* Reduced padding */
     background-color: var(--dark-color-a);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .chat-form-container form {
     display: flex;
-    gap: 10px;
+    gap: 8px; /* Slightly smaller gap */
 }
 
 .chat-form-container input[type='text'] {
-    font-size: 16px;
-    padding: 10px;
-    height: 45px;
+    font-size: 14px; /* Smaller font */
+    padding: 8px; /* Reduced padding */
+    height: 40px; /* Reduced height */
     flex: 1;
     border: none;
     border-radius: 4px;
@@ -158,7 +162,7 @@ a {
 /* Join Page */
 .join-container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 50px auto; /* Reduced top margin */
     color: #fff;
     box-shadow: var(--shadow);
     border-radius: 8px;
@@ -167,36 +171,36 @@ a {
 
 .join-header {
     text-align: center;
-    padding: 25px;
+    padding: 20px; /* Reduced padding */
     background: var(--dark-color-a);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .join-main {
-    padding: 40px;
+    padding: 30px; /* Reduced padding */
     background: var(--dark-color-b);
 }
 
 .join-main p {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .join-main .form-control {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .join-main label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-weight: 500;
 }
 
 .join-main input[type='text'],
 .join-main select {
-    font-size: 16px;
-    padding: 10px;
-    height: 45px;
+    font-size: 14px; /* Smaller font */
+    padding: 8px; /* Reduced padding */
+    height: 40px; /* Reduced height */
     width: 100%;
     border: none;
     border-radius: 4px;
@@ -211,25 +215,164 @@ a {
 }
 
 .join-main .btn {
-    margin-top: 30px;
+    margin-top: 20px; /* Reduced margin */
     width: 100%;
-    padding: 12px;
+    padding: 10px; /* Reduced padding */
 }
 
+/* Mobile Adjustments */
 @media (max-width: 700px) {
+    body {
+        margin: 5px; /* Minimal margin */
+    }
+
+    .chat-container {
+        margin: 10px; /* Reduced margin */
+        border-radius: 4px; /* Smaller radius */
+    }
+
+    .chat-header {
+        padding: 10px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+    }
+
+    .chat-header h1 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
     .chat-main {
-        display: block;
+        display: flex;
+        flex-direction: column; /* Stack sidebar and messages */
+        min-height: auto;
     }
 
     .chat-sidebar {
-        display: none;
+        display: block; /* Show sidebar by default */
+        padding: 10px;
+        max-height: 150px; /* Limit height on mobile */
+        overflow-y: auto;
+    }
+
+    .chat-sidebar h2 {
+        font-size: 16px;
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+
+    .chat-sidebar h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .chat-sidebar ul li {
+        padding: 6px 0;
+        font-size: 14px;
     }
 
     .chat-messages {
-        max-height: 400px;
+        padding: 15px;
+        max-height: calc(100vh - 250px); /* Dynamic height based on viewport */
+    }
+
+    .chat-messages .message {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .chat-messages .message .meta {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .chat-form-container {
+        padding: 10px 15px;
+    }
+
+    .chat-form-container input[type='text'] {
+        font-size: 12px;
+        padding: 6px;
+        height: 35px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
     .join-container {
-        margin: 50px 20px;
+        margin: 20px 10px; /* Reduced margin */
+    }
+
+    .join-header {
+        padding: 15px;
+    }
+
+    .join-main {
+        padding: 20px;
+    }
+
+    .join-main .form-control {
+        margin-bottom: 15px;
+    }
+
+    .join-main input[type='text'],
+    .join-main select {
+        font-size: 12px;
+        padding: 6px;
+        height: 35px;
+    }
+
+    .join-main .btn {
+        margin-top: 15px;
+        padding: 8px;
+    }
+}
+
+/* Extra Small Screens (below 400px) */
+@media (max-width: 400px) {
+    .chat-header h1 {
+        font-size: 14px;
+    }
+
+    .chat-sidebar {
+        max-height: 120px;
+    }
+
+    .chat-messages {
+        padding: 10px;
+        max-height: calc(100vh - 220px);
+    }
+
+    .chat-form-container {
+        padding: 8px 10px;
+    }
+
+    .chat-form-container form {
+        gap: 5px;
+    }
+}
+
+/* Add this to your existing CSS, under the mobile media query */
+@media (max-width: 700px) {
+    .chat-header {
+        position: relative; /* Ensure button stays within header */
+    }
+
+    .toggle-users-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .chat-sidebar {
+        max-height: 150px; /* Limit height on mobile */
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 701px) {
+    .chat-sidebar {
+        display: block !important; /* Force sidebar visible on desktop */
     }
 }
