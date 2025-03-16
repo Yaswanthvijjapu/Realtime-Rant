@@ -65,6 +65,7 @@ function setupToggleButton() {
         document.querySelector('.chat-header').appendChild(toggleBtn);
 
         // Hide sidebar by default on mobile
+        
         sidebar.style.display = 'none';
 
         toggleBtn.addEventListener('click', () => {
