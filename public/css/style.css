@@ -354,7 +354,6 @@ a {
     }
 }
 
-/* Add this to your existing CSS, under the mobile media query */
 @media (max-width: 700px) {
     .chat-header {
         position: relative; /* Ensure button stays within header */
