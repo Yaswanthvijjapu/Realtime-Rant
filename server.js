@@ -7,7 +7,13 @@ const {userJoin,getCurrentUser,userLeave,getRoomUsers} = require('./utils/users'
 
 const app = express();
 const server = http.createServer(app);
-const io = socketio(server);
+
+const io = socketio(server, {
+    cors: {
+        origin: "https://realtime-rant.vercel.app",
+        methods: ["GET", "POST"]
+    }
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
