@@ -12,8 +12,10 @@ const io = socketio(server, {
     cors: {
         origin: "https://realtime-rant.vercel.app",
         methods: ["GET", "POST"]
-    }
+    },
+    transports: ['websocket', 'polling']
 });
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
